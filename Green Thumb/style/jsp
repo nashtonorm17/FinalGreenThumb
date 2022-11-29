@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Query Result</title>
+</head>
+<body>
+<%@page import="jsp_azure_test.DataHandler"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Array"%>
+<%
+// The handler is the one in charge of establishing the connection.
+DataHandler handler = new DataHandler();
+// Get the attribute values passed from the input form.
+String employee_name = request.getParameter("name");
+String employee_address = request.getParameter("address");
+String salary = request.getParameter("salary");
+String technician_degree = request.getParameter("degree");
+String technician_position = request.getParameter("tp");
+String max_number_of_products = request.getParameter("max");
+String type_of_product_checked = request.getParameter("type");
+/*
+* If the user hasn't filled out all employee. This is very simple checking.
+*/
+if (employee_name.equals("") || employee_address.equals("") || salary.equals("")||
+technician_degree.equals("") || technician_position.equals("") || max_number_of_products.equals("") 
+|| type_of_product_checked.equals("")) {
+response.sendRedirect("Bates_Averi_IP_employee_form.jsp");
+} else {
+int num_salary = Integer.parseInt(salary);
+int num_max = Integer.parseInt(max_number_of_products);
+int num_type = Integer.parseInt(type_of_product_checked);
+
+// Now perform the query with the data from the form.
+boolean success = handler.queryOne(employee_name, employee_address, salary,
+technical_degree,technical_position,max_number_of_products, type_of_product_checked);
+if (!success) { // Something went wrong
+%>
+<h2>There was a problem inserting the course</h2>
+<%
+} else { // Confirm success to the user
+%>
+<h2>New Customer</h2>
+<ul>
+<li>Name <%=customerName%></li>
+<li>Address <%=customerAddress%></li>
+<li>Salary <%=category%></li>
+<li>Degree <%=customerName%></li>
+<li>Posistion <%=customerAddress%></li>
+<li>Max <%=category%></li>
+<li>Type <%=category%></li>
+</ul>
+<h2>Was successfully inserted.</h2>
+<a href="Bates_Averi_IP_get_customers_form.jsp">Call Query 12 here to find employees with certian salary
+range.</a>
+<%
+}
+}
+%>
+</body>
+</html>
