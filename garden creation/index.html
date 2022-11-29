@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+	<header>
+		<meta charset="utf-8">
+		<meta name="author" content="Ruyu Liu, Averi Bates, Parker Dawson">
+		<title>The green Thumb Project home Page</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="garden.js"></script>
+
+		<style>
+			#plantcol {
+				background-color: mintcream;
+			}
+			form {
+				background-color: mintcream;
+			}
+		</style>
+
+	</header>
+	<body>
+		<div class="d-md-flex h-md-100 align-items-center">
+			<div id="plantcol" class="col-md-2 p-0 bg-white h-md-100">
+				<div class="container-fluid h-100 text-center justify-content-center">
+					<h3>Plant Database</h3>
+				</div>
+				<form>
+					<input id="add-plant" type="text" placeholder="plant name" />
+					<button id="addPlantBtn">Add</button>
+				</form>
+				<div style = "width: 200px; height: 440px; line-height: 3em; overflow:scroll; border: thin #000 solid;">
+					<div>
+						<ul id="plant-list" class="list-unstyled">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10 p-0 bg-white h-md-100">
+				<div class = "bg-image" style="background-image: url('https://deepsoilmixing.co.uk/wp-content/uploads/2017/08/Soil-background-Image.jpg'); height: 100vh;">
+					<div id = "garden" class="row justify-content-md-center"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

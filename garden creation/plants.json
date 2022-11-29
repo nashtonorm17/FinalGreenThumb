@@ -1,0 +1,310 @@
+[{
+    "plantName": "Tulip",
+    "scientificName": "Tulipa",
+    "color": "pink, red, orange, yellow, green, purple, white",
+    "watering": "1 inch weekly",
+    "soil": "cool soil",
+    "sunlight": "12-14 hours of direct light daily",
+	"image": "/images/tulip.jpg"
+}, 
+{
+    "plantName": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "color": "red, orange, yellow, green, purple",
+    "watering": "1-2 inches weekly",
+    "soil": "loam soil, well drained and holds moisture",
+    "sunlight": "6 hours of direct light daily",
+	"image": "/images/tomato.jpg"
+}, 
+{
+	"plantName": "Rose",
+    "scientificName": "Rosa",
+    "color": "red",
+    "watering": "1-2 inches weekly",
+    "soil": "loam soil, well drained and holds moisture",
+    "sunlight": "4 hours of direct light daily",
+	"image": "/images/rose.jpg"
+}, {
+	"plantName": "Sunflower",
+    "scientificName": "Helianthus",
+    "color": "yellow",
+    "watering": "1 inch of water weekly",
+    "soil": "alkaline nutrient rich soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/sunflower.jpg"
+}, {
+	"plantName": "Ivy",
+    "scientificName": "Hedera Helix",
+    "color": "green",
+    "watering": "wait to water until top inch of soil is dry",
+    "soil": "dry soil",
+    "sunlight": "low to medium light, not direct",
+	"image": "/images/ivy.jpg"
+}, {
+	"plantName": "Orchid",
+    "scientificName": "Orchidaceae",
+    "color": "red, pink, white, blue, green, purple, orange, yellow",
+    "watering": "once every 7-10 days",
+    "soil": "moss or other soil substitutes",
+    "sunlight": "12-14 hours of direct light daily",
+	"image": "/images/orchid.jpg"
+}, 
+{
+	"plantName": "Cherry Blossom",
+    "scientificName": "Prunus serrulata",
+    "color": "pink, white",
+    "watering": "once every 2-3 weeks",
+    "soil": "acidic soil",
+    "sunlight": "6 hours of direct light daily",
+	"image": "/images/cherry blossom.jpg"
+}, 
+{
+	"plantName": "Thyme",
+    "scientificName": "Thymus vulgaris",
+    "color": "blue, green",
+    "watering": "1 inch every 10-15 days",
+    "soil": "well drained, alkaline soil",
+    "sunlight": "10 hours of direct light daily",
+	"image": "/images/thyme.jpg"
+}, 
+{
+	"plantName": "Wild Lilac",
+    "scientificName": "Ceanothus",
+    "color": "purple",
+    "watering": "1-2 times per week",
+    "soil": "well drained alkaline soil",
+    "sunlight": "6 hours of direct light daily",
+	"image": "/images/lilac.jpg"
+}, 
+{
+	"plantName": "Sage",
+    "scientificName": "Salvia officinalis",
+    "color": "green, purple, blue",
+    "watering": "1-2 times per week",
+    "soil": "loam soil, well drained",
+    "sunlight": "6 hours of direct sunlight daily",
+	"image": "/images/sage.jpg"
+}, 
+{
+	"plantName": "Peppermint",
+    "scientificName": "Mentha piperita",
+    "color": "green",
+    "watering": "2 times per week",
+    "soil": "cool, loose, nutrient rich soil",
+    "sunlight": "4-6 hours of direct light daily",
+	"image": "/images/peppermint.jpg"
+}, 
+{
+	"plantName": "Lamb’s Ear",
+    "scientificName": "Stachys byzantina",
+    "color": "green",
+    "watering": "1 inch per week",
+    "soil": "well drained, alkaline soil",
+    "sunlight": "8 hours of direct light daily",
+	"image": "/images/lambs_ear.jpg"
+}, 
+{
+	"plantName": "Cabbage",
+    "scientificName": "Brassica oleracea",
+    "color": "green, purple, white",
+    "watering": "1 ½ inch weekly",
+    "soil": "loamy, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/cabbage.jpg"
+}, 
+{
+	"plantName": "Carrots",
+    "scientificName": "Daucus carota subsp. sativus",
+    "color": "red, orange, pink, purple, black, yellow, cream",
+    "watering": "1 inch weekly",
+    "soil": "sandy and loose soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/carrots.jpg"
+}, 
+{
+	"plantName": "Lettuce",
+    "scientificName": "Lactuca sativa",
+    "color": "green, purple, ",
+    "watering": "1 inches twice a week",
+    "soil": "loose, well-drained, and moist soil",
+    "sunlight": "6 hours of direct light daily",
+	"image": "/images/lettuce.jpg"
+}, 
+{
+	"plantName": "Onion",
+    "scientificName": "Allium cepa",
+    "color": "red, yellow, white ",
+    "watering": "1-2 inches a week",
+    "soil": " loose, light, loamy soil",
+    "sunlight": "10-16 hours of direct light daily (depending of variety)",
+	"image": "/images/onion.jpg"
+},
+{
+	"plantName": "Sweet Potato",
+    "scientificName": "Ipomoea batatas",
+    "color": "yellow, orange, purple, white",
+    "watering": "1-2 inches weekly",
+    "soil": "sandy, loamy soil",
+    "sunlight": "8-10 hours of direct light daily",
+	"image": "/images/sweet_potato.jpg"
+},
+{
+	"plantName":  "Potato",
+    "scientificName": "Solanum tuberosum",
+    "color": "red, yellow, purple, black",
+    "watering": "1-1 ½ inches weekly",
+    "soil": "well-drained loamy soil",
+    "sunlight": "8 hours of direct light daily ",
+    "image": "/images/potato.jpg"
+},
+{
+	"plantName": "Daisy",
+    "scientificName": "Bellis perennis",
+    "color": "pink, red, yellow, blue, purple, white",
+    "watering": "1-2 inches weekly",
+    "soil": "slightly acidic, well drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/daisy.jpg"
+},
+{
+	"plantName": "Lily of the Valley",
+    "scientificName": "Convallaria majalis",
+    "color": "pink, purple, white",
+    "watering": "2 inches weekly",
+    "soil": "humus-rich, well-drained soil",
+    "sunlight": " 6-8 or partial/shaded light",
+	"image": "/images/lilly_of_the_valley.jpg"
+},
+{
+	"plantName": "Foxglove",
+    "scientificName": "Digitalis purpurea",
+    "color": "pink, red, purple, white",
+    "watering": "1 inch of water weekly",
+    "soil": "loamy, well-drained soil",
+    "sunlight": "6-8 hours partial/ shaded light",
+	"image": "/images/foxglove.jpg"
+},
+{
+	"plantName": "Begonias",
+    "scientificName": "pink, orange, yellow, white",
+    "color": "Begonia obliqua",
+    "watering": "½ - 1 every 3-4 days",
+    "soil": "moist, well-drained soil",
+    "sunlight": "4-6 hours of indirect sunlight",
+"image": "/images/begonias.jpg"
+},
+{
+	"plantName": "Marigold",
+    "scientificName": "Tagetes erecta",
+    "color": "red, orange, yellow, cream",
+    "watering": "1-2 inches weekly",
+    "soil": "any well-drained soil",
+    "sunlight": "8-10 hours of direct light daily",
+	"image": "/images/marigold.jpg"
+}, 
+ 
+{
+"plantName": "Peony",
+    "scientificName": "Paeonia officinalis",
+    "color": "pink, red, orange, yellow, white, cream",
+    "watering": "2 inches weekly",
+    "soil": "loamy, friable, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/peony.jpg"
+},
+ 
+{
+"plantName": "Iris",
+    "scientificName": "Iris germanica",
+    "color": "pink, red, orange, yellow, blue, purple, white, cream",
+    "watering": "1-2 inches weekly",
+    "soil": "humus-rich, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/iris.jpg"
+},
+{
+"plantName": "Dahlia",
+    "scientificName": "Dahlia pinnata",
+    "color": "pink, red, orange, yellow, purple, black, white",
+    "watering": "2 inches weekly",
+    "soil": "sandy, humus-rich soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/dahlia.jpg"
+},
+{
+"plantName": "Carnations",
+    "scientificName": "Dianthus caryophyllus",
+    "color": "pink, red, orange, yellow, white",
+    "watering": "1-2 inches of water weekly",
+    "soil": "alkaline, well-drained soil",
+    "sunlight": "direct/partial light daily",
+	"image": "/images/carnations.jpg"
+ 
+},
+{
+"plantName": "Daffodils",
+    "scientificName": "Narcissus pseudonarcissus",
+    "color": "pink, orange, yellow, green, white",
+    "watering": "1 inch weekly",
+    "soil": "slightly acidic, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/daffodils.jpg"
+},
+{
+"plantName": "Basil",
+    "scientificName": "Ocimum basilicum",
+    "color": "green",
+    "watering": "1 inch weekly",
+    "soil": "slightly acidic, well-drained soil",
+    "sunlight": "10-12 hours of direct light daily",
+	"image": "/images/basil.jpg"
+},
+{
+"plantName": "Rosemary",
+    "scientificName": "Salvia rosmarinus",
+    "color": "green, pink, blue, purple, white",
+    "watering": "1 gallon weekly (per bush)",
+    "soil": "calcareous, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/rosemary.jpg"
+},
+{
+"plantName": "Parsely",
+    "scientificName": "Petroselinum crispum",
+    "color": "green",
+    "watering": "1 inch weekly",
+    "soil": "moist, loamy, and well-turned soil",
+    "sunlight": "6-8 hours of direct/partial light daily",
+	"image": "/images/parsely.jpg"
+},
+{
+"plantName": "Azalea",
+    "scientificName": "Rhododendron",
+    "color": "pink, red, yellow, purple, white",
+    "watering": "1 gallon weekly (per bush)",
+    "soil": "aerated, loamy, well-drained soil",
+    "sunlight": "4-6 hours of partial/shaded of light daily",
+	"image": "/images/azalea.jpg"
+},
+{
+"plantName": "Chrysanthemum",
+    "scientificName": "Chrysanthemum indicum",
+    "color": "pink, red, orange, yellow, green, purple, white",
+    "watering": "1 inch weekly",
+    "soil": "slightly acidic, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/Chrysanthemum.jpg"
+},
+{
+"plantName": "Daylily",
+    "scientificName": "Hemerocallis lilioasphodelus",
+    "color": "pink, orange, yellow, green, white",
+    "watering": "1 inch weekly",
+    "soil": "slightly acidic, well-drained soil",
+    "sunlight": "6-8 hours of direct light daily",
+	"image": "/images/Daylily.jpg"
+}
+ 
+]
+ 
+
