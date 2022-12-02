@@ -104,7 +104,6 @@ app.put('/usergardens', function(req, res) {
 			plantimg = info.image;
 		}
 	})
-	console.log(usergardens);
 	usergardens.forEach(function (info) {
 		if (info.username == currentUser) {
 			info.plants.push(plantimg);

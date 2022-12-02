@@ -22,7 +22,6 @@ function loadgarden() {
         success: function (response) {
             var list = $('#garden');
             list.html("");
-            console.log(response.usergardens);
             response.usergardens.forEach(function (info) {
                 list.append('\
 						<div className="col-lg-2"><img className="img-thumbnail" height=150px width=150px src="' + info + '"></div>'
