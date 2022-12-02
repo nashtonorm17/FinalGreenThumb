@@ -1,10 +1,8 @@
 # Final Project
 ## OU CS 3203 (Software Engineering) FALL22 
+## Goal: Create a Website using a RESTFul API
 
-# Database (What Categories -> Future Feature)
-Goal: Create a Website using a RESTFul API
-
-# Website Plan
+# Website Plan/Structure 
 - Login Page/Create Account Page
    - Completed 
 - Home Page
