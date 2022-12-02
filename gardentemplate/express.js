@@ -11,6 +11,8 @@ const { text } = require('body-parser');
 
 var userinfo = []
 
+var currentUser = "sample";
+
 //load the input file
 fs.readFile('users.json', 'utf8', function readFileCallback(err,data ){
   if(err){
@@ -31,12 +33,11 @@ app.post('/userinfo', function(req, res) {
   var myUsername = req.body.username;
   var myPassword = req.body.password;
 
-  console.log(myUsername,myPassword)
-
   // push all of the data
   userinfo.push({
     username: myUsername,
-    password: myPassword
+    password: myPassword,
+	plants: []
   })
   res.send('Successfully created account')
 });
@@ -47,14 +48,11 @@ app.post('/verifyLogin', function(req, res){
   var myUsername = req.body.username;
   var myPassword = req.body.password;
 
-  console.log(req.body)
-
   for (i = 0; i < userinfo.length; i++) {
-    console.log(myUsername,myPassword,userinfo[i])
     if (myUsername == userinfo[i].username && myPassword == userinfo[i].password) {
-        console.log(myUsername + " is logged in!!")
+		console.log(myUsername + " is logged in!!")
+		currentUser = myUsername
         res.send(JSON.stringify({msg:"correct"}))
-        return
     }
   }
   console.log("Incorrect Username or Password")
@@ -65,7 +63,6 @@ app.post('/verifyLogin', function(req, res){
 var plantinfo = []
 
 var usergardens = []
-var currentUser = "sample";
 
 fs.readFile('plants.json', 'utf8', function readFileCallback(err, data) {
   if(err){
@@ -77,7 +74,7 @@ fs.readFile('plants.json', 'utf8', function readFileCallback(err, data) {
   }
 });
 
-fs.readFile('userGarden.json', 'utf8', function readFileCallback(err, data) {
+fs.readFile('users.json', 'utf8', function readFileCallback(err, data) {
 	if(err){
 		req.log.info('cannot load a file:' + fileFolder + '/' + _file_name)
 		throw err;
@@ -111,12 +108,21 @@ app.put('/usergardens', function(req, res) {
 	usergardens.forEach(function (info) {
 		if (info.username == currentUser) {
 			info.plants.push(plantimg);
-			fs.writeFile('userGarden.json', JSON.stringify(usergardens), function(err, result) {
+			fs.writeFile('users.json', JSON.stringify(usergardens), function(err, result) {
 				if(err) console.log("Could not write to file\n", err);
 			});
 			res.send("Success!");
 		}
 	})
+});
+
+app.delete('/usergardens', function (req, res) {
+	usergardens.forEach(function (info) {
+		if (info.username == currentUser) {
+			info.plants = [];
+			res.send("Success!");
+        }
+    })
 });
 
 

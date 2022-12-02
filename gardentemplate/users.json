@@ -1,15 +1,19 @@
-[{
-        "username": "pkdawson",
-        "password": "pkdawson"
-    },
-    {
-        "username": "abates",
-        "password": "abates"
-    },
-    {
-        "username": "rliu",
-        "password": "rliu"
-    }
+[
+  {
+    "username": "pkdawson",
+    "password": "pkdawson",
+    "plants": []
+  },
+  {
+    "username": "abates",
+    "password": "abates",
+    "plants": []
+  },
+  {
+    "username": "rliu",
+    "password": "rliu",
+    "plants": []
+  }
 
 ] 
 

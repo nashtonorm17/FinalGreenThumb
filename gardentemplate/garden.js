@@ -50,15 +50,17 @@ $(function() {
             }
         })
     });
+
+    $('#clearBtn').on('click', function (event) {
+        event.preventDefault();
+        $.ajax({
+            url: 'usergardens',
+            method: 'DELETE',
+            contentType: "application/json",
+            success: function (response) {
+                loadgarden();
+            }
+        })
+    })
 });
 
-	/*function garden{
-		$.ajax({
-			url: '/usergardens',
-			contentType: "application/json",
-			success: function(response) {
-				var garden = $('#garden');
-				garden.html('');
-			}
-		})
-	});*/
