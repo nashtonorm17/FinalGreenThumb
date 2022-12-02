@@ -52,7 +52,8 @@ app.post('/verifyLogin', function(req, res){
     if (myUsername == userinfo[i].username && myPassword == userinfo[i].password) {
 		console.log(myUsername + " is logged in!!")
 		currentUser = myUsername
-        res.send(JSON.stringify({msg:"correct"}))
+		res.send(JSON.stringify({ msg: "correct" }))
+		return
     }
   }
   console.log("Incorrect Username or Password")
