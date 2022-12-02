@@ -25,7 +25,7 @@ npm install
 
 You must download all files in repo to local machine making sure to preserve file name paths used in files
 
-*NOTE If file names are not preserved the website will not work properly 
+*NOTE: If file names are not preserved the website will not work properly 
 
 ## Run
 'npm start' or 'nodemon app'
@@ -42,12 +42,8 @@ Create a new user account by entering in a new password and username or login in
 
 ## Links 
 
-After logining in you will be directed the the homepage 
+After logining in you will be directed the the homepage from which you can link to every other page. Click the page link to go to page. you would like to see 
 
-## Gar
+## Garden Creation
 
-Click the 'Recently Searched' button to show recently searched tweets.
-
-It will show the format of how the tweets will show up when searched for.
-
-To search for a tweet, enter an ID and then click on the 'Search' button.
+Search through the plant options to find plants you would like to added to your garden for every plant you would like to add click the add button. If you would like to clear your garden click the clear button. To return back to the previous page click the back button. Your garden will be saved until it is cleared. 
