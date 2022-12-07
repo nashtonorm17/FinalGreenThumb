@@ -28,7 +28,6 @@ fs.readFile('users.json', 'utf8', function readFileCallback(err,data ){
 
 app.post('/userinfo', function(req, res) {
 
-
   console.log('test')
   var myUsername = req.body.username;
   var myPassword = req.body.password;
@@ -39,6 +38,9 @@ app.post('/userinfo', function(req, res) {
     password: myPassword,
 	plants: []
   })
+  fs.writeFile('users.json', JSON.stringify(userinfo), function(err, result) {
+    if(err) console.log("Could not write to file\n", err);
+  });
   res.send('Successfully created account')
 });
 
@@ -63,8 +65,6 @@ app.post('/verifyLogin', function(req, res){
 
 var plantinfo = []
 
-var usergardens = []
-
 fs.readFile('plants.json', 'utf8', function readFileCallback(err, data) {
   if(err){
     req.log.info('cannot load a file:' + fileFolder + '/' + _file_name)
@@ -75,22 +75,12 @@ fs.readFile('plants.json', 'utf8', function readFileCallback(err, data) {
   }
 });
 
-fs.readFile('users.json', 'utf8', function readFileCallback(err, data) {
-	if(err){
-		req.log.info('cannot load a file:' + fileFolder + '/' + _file_name)
-		throw err;
-	}
-	else{
-		usergardens = JSON.parse(data);
-	}
-});
-
 app.get('/plantinfo', function(req, res) {
 	res.send({plantinfo: plantinfo});
 });
 
 app.get('/usergardens', function(req, res) {
-	usergardens.forEach(function (info) {
+	userinfo.forEach(function (info) {
 		if (info.username == currentUser) {
 			res.send({usergardens: info.plants});
 		}
@@ -105,10 +95,10 @@ app.put('/usergardens', function(req, res) {
 			plantimg = info.image;
 		}
 	})
-	usergardens.forEach(function (info) {
+	userinfo.forEach(function (info) {
 		if (info.username == currentUser) {
 			info.plants.push(plantimg);
-			fs.writeFile('users.json', JSON.stringify(usergardens), function(err, result) {
+			fs.writeFile('users.json', JSON.stringify(userinfo), function(err, result) {
 				if(err) console.log("Could not write to file\n", err);
 			});
 			res.send("Success!");
@@ -117,17 +107,13 @@ app.put('/usergardens', function(req, res) {
 });
 
 app.delete('/usergardens', function (req, res) {
-	usergardens.forEach(function (info) {
+	userinfo.forEach(function (info) {
 		if (info.username == currentUser) {
 			info.plants = [];
 			res.send("Success!");
         }
     })
 });
-
-
-
-
 
 app.listen(PORT, function() {
   console.log('Server listening on ' + PORT);
